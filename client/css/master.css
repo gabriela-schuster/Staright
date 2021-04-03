@@ -4,9 +4,9 @@
 }
 html {
 	--light: #f1f1f1;
-	--dark: #070709;
-	--main: #80ff40;
-	--secondary: #dcff03;
+	--dark: #131616;
+	--main: #23CE6B;
+	--secondary: #9b4Ae3;
 }
 body {
 	background-color: var(--dark);
@@ -14,21 +14,34 @@ body {
 	font-family: 'Source Code Pro', monospace;
 }
 
-h1, h2 {
+.margin {
+	max-width: 1200px;
+	margin: auto;
+}
+
+h1, h2, h3 {
 	font-family: 'Yatra One', cursive;
 	letter-spacing: 2px;
 }
 h1 {
 	font-size: 3rem;
 	line-height: 4.8rem;
-	color: var(--main);
+	color: var(--secondary);
 }
 h2 {
 	font-size: 2rem;
 	line-height: 3.2rem;
-	color: var(--secondary);
+}
+h3 {
+	font-size: 1.2rem;
+	line-height: 2.6rem;
 }
 p {
 	font-size: 1rem;
 	line-height: 1.6rem;
+}
+
+::selection {
+	background-color: var(--secondary);
+	color: var(--dark);
 }
